@@ -3,11 +3,11 @@ class Book extends LibraryItem
 	private String author;
 	private int numPages;
 	
-	public Book(String title,String itemID,String author,int numpages)
+	public Book(String title,String itemID,String author,int numPages)
 	{
 		super(title,itemID);
 		this.author=author;
-		this.numpages=numpages;
+		this.numPages=numPages;
 	}
 	public String getAuthor()
 	{
@@ -18,10 +18,10 @@ class Book extends LibraryItem
 		return numPages;
 	}
 	
-	@override
+	@Override
 	public void displayItemDetails()
 	{
-		super.diplayItemDetails()
+		super.diplayItemDetails();
 		{
 			super.diplayItemDetails();
 			System.out.println("Author :"+ author);

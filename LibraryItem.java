@@ -29,7 +29,8 @@ abstract class LibraryItem
 	
 	public void displayItemDetails()
 	{
-		System.out.println("Title: "+title)
-		System.out.println("ITem ID: "+itemID)
+		System.out.println("Title: "+title);
+		System.out.println("ITem ID: "+itemID);
 		System.out.println("Item Checked out: "+(checkedOut? "yes":"No"));
 	}
+}
