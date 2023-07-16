@@ -1,9 +1,8 @@
-class Book extends LibraryItem
-{
+class Book extends LibraryItem{
 	private String author;
 	private int numPages;
-	
-	public Book(String title,String itemID,String author,int numPages)
+
+	public Book(String title, String itemID, String author, int numPages)
 	{
 		super(title,itemID);
 		this.author=author;
@@ -17,15 +16,11 @@ class Book extends LibraryItem
 	{
 		return numPages;
 	}
-	
-	@Override
+	//Override
 	public void displayItemDetails()
 	{
-		super.diplayItemDetails();
-		{
-			super.diplayItemDetails();
-			System.out.println("Author :"+ author);
-			System.out.println("number of pages"+numPages);
-		}
+		super.displayItemDetails();
+		System.out.println("Author : "+ author);
+		System.out.println("Number of Pages : "+ numPages);
 	}
 }

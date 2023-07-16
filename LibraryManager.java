@@ -1,6 +1,5 @@
-class LibraryManager
-{
-	public static void main(String[] args)
+class LibraryManager{
+	public static void main(String[] args) 
 	{
 		Book b1 = new Book("The Catcher in the Rye" , "B001", "J.D. Salinger", 240);
 		Book b2 = new Book("To Kill a Mockingbird ", "B002" ,"Harper Lee", 281);
@@ -20,16 +19,13 @@ class LibraryManager
 		LibraryMember mem4 = new LibraryMember("L004", "Sarah Williams");
 		LibraryMember mem5 = new LibraryMember("L005", "Michael Brown");
 	
-	
-	
-	
-		
-		LibraryItem[] libraryItems ={b1,b2,b3,b4,b5};
-		LibraryMember[] libraryMembers = {mem1,mem2,me3,};
-		
-		b1.checkout();
+		b1.checkOut();
 		b1.checkIn();
-		
+
+		LibraryItem[] libraryItems = {b1,b2,b3,b4,b5};
+		LibraryMember[] libraryMembers = {mem1,mem2,mem3,mem4,mem5};
+
+
 		System.out.println("Library Items:");
 		System.out.println("-----------------------");
 		for(LibraryItem item : libraryItems){
